@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock paper scissor</title>
+    <link rel="stylesheet" href="game.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <h2>Rock paper Scissors</h2>
+    
+    <div class="icon">
+        <button onclick="
+            playGame('rock')
+            ">
+            <i class="fa-solid fa-hand-back-fist"></i>
+        </button>
+            
+        <button onclick="
+            playGame('paper')
+        ">
+            <i class="fa-solid fa-hand"></i>
+        </button>
+        
+        <button onclick="
+            playGame('scissor')
+        ">
+            <i class="fa-solid fa-hand-scissors"></i>
+        </button>
+        
+    </div>
+    
+    <p class="js-result"></p>
+    
+    <div class="pick">
+       You  <span class="my_move"><i class="fa-solid fa-hand-back-fist"></i></span>  
+        
+        <span class="com_move"><i class="fa-solid fa-hand-scissors" id="computer_move"></i></span> Computer
+    </div>
+    
+    <p class="js-game-score">Wins: 0, Losses: 0, Ties: 0</p>
+    
+    <button onclick="
+        dataReset();
+    " class="rest_button">Reset button</button>
+    
+    
+    <script src="gamw.js">
+    
+    </script>
+</body>
+</html>
